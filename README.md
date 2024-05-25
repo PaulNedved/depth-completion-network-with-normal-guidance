@@ -1,4 +1,5 @@
-# depth-completion-network-with-normal-guidance
+# Self-supervised Depth Completion with Calibration Enhancement and Normal Guidance
+
 PyTorch implementation of *Self-supervised Depth Completion with Calibration Enhancement and Normal Guidance*
 
 ## Setting up virtual environment <a name="setting-up"></a>
@@ -27,7 +28,7 @@ For datasets, we will use KITTI for outdoors, here is the download script:
 mkdir data
 ln -s /path/to/kitti_raw_data data/
 ln -s /path/to/kitti_depth_completion data/
-ln -s /path/to/kitti_depth_completion data/
+bash bash/setup_dataset_kitti.sh
 ```
 ## Training and Testing KBNet <a name="training-kbnet"></a>
 To train KBNet on the KITTI dataset, run
